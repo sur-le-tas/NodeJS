@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "es2017",
+		"lib": ["es2017"],
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"strictNullChecks": true,
+		"plugins": [
+			{
+				"name": "typescript-tslint-plugin",
+				"configFile": "tslint.json",
+				"alwaysShowRuleFailuresAsWarnings": true,
+				"suppressWhileTypeErrorsPresent": true,
+				"ignoreDefinitionFiles": false
+			}
+		]
+	},
+	"exclude": ["node_modules"]
+}

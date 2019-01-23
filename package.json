@@ -1,0 +1,40 @@
+{
+	"name": "@sur-le-tas/nodejs",
+	"version": "1.0.0",
+	"license": "MIT",
+	"author": "Jérémy Bensimon <bensimon.jeremy@gmail.com>",
+	"repository": "github:sur-le-tas/NodeJS",
+	"private": true,
+	"engines": {
+		"node": ">=8.10"
+	},
+	"engineStrict": true,
+	"scripts": {
+		"dev": "ts-node-dev --respawn --no-notify",
+		"test": "jest"
+	},
+	"jest": {
+		"preset": "ts-jest",
+		"testEnvironment": "node",
+		"globals": {
+			"ts-jest": {
+				"diagnostics": {
+					"warnOnly": true
+				}
+			}
+		}
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/jest": "^23.3.13",
+		"@types/node": "^8.10.8",
+		"jest": "^23.6.0",
+		"ts-jest": "^23.10.5",
+		"ts-node": "^8.0.1",
+		"ts-node-dev": "^1.0.0-pre.32",
+		"tslint": "^5.12.1",
+		"tslint-config-prettier": "^1.17.0",
+		"typescript": "^3.2.4",
+		"typescript-tslint-plugin": "^0.3.0"
+	}
+}
